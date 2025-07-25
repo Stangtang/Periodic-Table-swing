@@ -176,14 +176,14 @@ public class PeriodicTable extends JFrame {
         int group = element.getGroup();
 
         if (atomicNumber >= 57 && atomicNumber <= 71) { // lanthanides
-            gbc.gridx = (atomicNumber - 57) + 3; // start @ col 3
+            gbc.gridx = (atomicNumber - 57) + 3; // start at col 3
             gbc.gridy = 8; // special row for lanthanides
         } else if (atomicNumber >= 89 && atomicNumber <= 103) { // actinides
-            gbc.gridx = (atomicNumber - 89) + 3; // start @ col 3
+            gbc.gridx = (atomicNumber - 89) + 3; // start at col 3
             gbc.gridy = 9; // special row for actinides
         } else {
-            gbc.gridx = group; // cols 1-18 (0 = period labels)
-            gbc.gridy = period; // Rows 1-7 (0 = group labels)
+            gbc.gridx = group; // cols 1-18
+            gbc.gridy = period; // rows 1-7
         }
 
         tablePanel.add(btn, gbc);
